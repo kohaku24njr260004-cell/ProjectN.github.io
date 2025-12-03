@@ -107,4 +107,28 @@
     margin-top: 60px;
   }
 
+  #backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    opacity: 0;           /* 初期は透明 */
+    pointer-events: none; /* 非表示時はクリック不可 */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.4s; /* フェードイン・アウトの時間 */
+  }
+  
+  #backToTop.show {
+    opacity: 1;            /* 表示時は不透明 */
+    pointer-events: auto;  /* クリック可能に */
+  }
+  
+  #backToTop:hover {
+    background-color: #0056b3;
+  }
   
