@@ -83,29 +83,3 @@ function download(filename, text) {
     });
   });
 
-// スムーズスクロール
-const topBtn = document.getElementById('top-btn');
-
-// ページがスクロールされたときにボタンの表示・非表示を切り替える
-window.onscroll = function() {
-  // ページが500ピクセル以上スクロールされたらボタンを表示
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    topBtn.style.opacity = '1';
-    topBtn.style.display = 'block';
-  } else {
-    topBtn.style.opacity = '0';
-    topBtn.style.display = 'none';
-  }
-};
-
-// ボタンがクリックされたときの処理
-topBtn.onclick = function() {
-  // ページ上部へスムーズにスクロールする
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-  return false; // リンクのデフォルトの動作を抑制
-};
-
-  
