@@ -107,5 +107,33 @@
     margin-top: 60px;
   }
 
+  section{
+  height: 1000px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 100px 50px;
+}
+
+.button{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 50px;
+  color: #fff;
+  background: #000;
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s;
   
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*このクラスが付与されると表示する*/
+.active{
+  opacity: 1;
+  visibility: visible;
+}
   
