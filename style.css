@@ -107,27 +107,5 @@
     margin-top: 60px;
   }
 
-.top-btn {
-  position: fixed; /* 画面の固定 */
-  bottom: 20px; /* 画面下部からの距離 */
-  right: 20px; /* 画面右部からの距離 */
-  width: 50px; /* ボタンの幅 */
-  height: 50px; /* ボタンの高さ */
-  background-color: #333; /* 背景色 */
-  color: white; /* 文字色 */
-  text-align: center; /* 文字を中央寄せ */
-  line-height: 50px; /* 文字を垂直中央寄せ */
-  border-radius: 50%; /* 円形にする */
-  opacity: 0; /* 初期状態では非表示 */
-  transition: opacity 0.3s ease; /* フェードイン/アウトのアニメーション */
-  text-decoration: none; /* 下線なし */
-  display: none; /* 初期状態では非表示 */
-}
-
-.top-btn.show {
-  opacity: 1; /* 表示状態 */
-  display: block;
-}
-
   
   
