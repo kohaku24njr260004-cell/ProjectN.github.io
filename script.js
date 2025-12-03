@@ -83,3 +83,21 @@ function download(filename, text) {
     });
   });
 
+const backToTopButton = document.getElementById('backToTop');
+
+// スクロールイベントで表示切替
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopButton.classList.add('show'); // フェードイン
+  } else {
+    backToTopButton.classList.remove('show'); // フェードアウト
+  }
+});
+
+// クリックでスムーズスクロール
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
