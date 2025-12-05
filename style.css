@@ -77,6 +77,8 @@ main {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 24px 20px;
+  max-width:400px;
+  width:700px;
 }
 
 .card h2, .card h3, .card h4 {
