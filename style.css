@@ -6,11 +6,11 @@
     --radius: 12px;
     --shadow: 0 6px 18px rgba(22, 28, 37, 0.08);
     --max-width: 800px;
-  }
-  
-  * { box-sizing: border-box; }
-  
-  html, body {
+}
+
+* { box-sizing: border-box; }
+
+html, body {
     height: 100%;
     margin: 0;
     overflow-y: auto;
@@ -18,39 +18,39 @@
     color: #0f172a;
     font-family: Inter, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
     line-height: 1.8;
-  }
-  
-  .wrap {
+}
+
+.wrap {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 40px 20px 120px;
     min-height: 180vh;
-  }
-  
-  /* ヘッダー */
-  header {
+}
+
+/* ヘッダー */
+header {
     text-align: center;
     margin-bottom: 40px;
-  }
-  header h1 {
+}
+header h1 {
     font-size: 26px;
     margin-bottom: 8px;
     border-bottom: 3px dotted #0066cc;
-  }
-  header .intro {
+}
+header .intro {
     color: var(--muted);
     font-size: 15px;
-  }
+}
 
-  header h2 {
+header h2 {
     font-size: 20px;
     text-align: left;
     border-bottom: 1px solid blue;
-  }
+}
 
-  .criteria-list {
-    padding-left: 0;        /* 左の余白を消す */
-    margin: 0 auto 30px;    /* 中央寄せ＋下余白 */
+.criteria-list {
+    padding-left: 0;
+    margin: 0 auto 30px;
     text-align: left;
     color: #0f172a;
     font-size: 17px;
@@ -58,65 +58,74 @@
     background: var(--card);
     border-radius: var(--radius);
     color: dodgerblue;
-    background-color:cornsilk;
+    background-color: cornsilk;
     font-weight: 200;
-  }
-  
-  .criteria-list li {
+}
+
+.criteria-list li {
     display: block;
-  }
-  
-  
-  /* メイン */
-  main {
+}
+
+/* メイン */
+main {
     display: flex;
     flex-direction: column;
     gap: 40px;
-  }
-  
-  /* 各基準のカード */
-  .card {
+}
+
+/* カード */
+.card {
     background: var(--card);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     padding: 24px 20px;
-  }
-  
-  .card h2 {
+}
+
+.card h2 {
     font-size: 20px;
     color: var(--accent);
     margin-bottom: 12px;
-  }
-  
-  .card h3 {
+}
+
+.card h3 {
     font-size: 18px;
     color: #0f172a;
     margin-bottom: 12px;
-  }
-  
-  .card p {
+}
+
+.card p {
     margin: 0;
     color: #1e293b;
     font-size: 15px;
-  }
-  
-  footer {
+}
+
+footer {
     text-align: center;
     color: var(--muted);
     font-size: 13px;
     margin-top: 60px;
-  }
-  
-  
-
-@media screen and(max-width: 480px) {
-    img {
-    border: 0;
-    }
-    }
-@media screen and(min-width: 1280px) {
-    img {
-    border: 1px solid red;
-    }
 }
 
+
+/* ▼▼▼ ここから追加したスマホ対応コード ▼▼▼ */
+
+/* スマホで画像を画面幅に収める */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 16px auto;
+}
+
+/* メディアクエリ（スペースを修正）*/
+@media screen and (max-width: 480px) {
+  img {
+    border: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  img {
+    border: 1px solid red;
+  }
+}
